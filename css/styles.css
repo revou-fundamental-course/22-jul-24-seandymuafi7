@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+/*Navigation Section*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 0 30px;
+    margin: 15px 10px;
+}
+nav header p{
+    font-weight: 700;
+    font-style: italic;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+nav button{
+    height: 30px;
+    background: whitesmoke;
+    border: 1px solid gray;
+}
+
+/*Main Content Section*/
+.opening{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid grey;
+    margin: 15px 10px;
+    text-align: center;
+}
+.opening h1{
+    color: darkslategray
+}
+.opening p{
+    color: lightslategray;
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.content-1{
+    flex: 3;
+    width: 100%;
+    margin: 15px 10px;
+    border: 1px solid grey;
+    padding: 15px 30px;
+}
+.content-1 img{
+    width: 100%
+}
+.testimoni{
+    padding: 15px 30px;
+    font-style: italic;
+    color: grey;
+    border: 1px solid grey;
+    font-size: 17px;
+    box-shadow: 3px 5px 5px rgb(245, 220, 173);
+}
+.profile{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border: 1px solid grey;
+}
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 5px grey;
+}
+.profile article{
+    margin: 0 30px;
+}
+.profile p{
+    color: lightslategray;
+}
+#profile-name{
+    font-weight: bold;
+    color: darkslategray;
+}
+.offer{
+    font-weight: bold;
+    margin: 30px 0;
+    color: darkslategray;
+}
+.features{
+    margin-left: 30px;
+}
+.features article{
+    display: flex;
+    align-items: center;
+}
+.num{
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    background: lightgrey;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.offerings{
+    margin-left: 30px;
+    color: lightslategray;
+}
+form{
+    display: flex;
+    flex: 1;
+    margin: 15px 10px;
+    padding: 15px 30px;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+    max-height: 600px;
+    background: rgb(230, 229, 229);
+    border: 1px solid grey;
+}
+.form-header{
+    font-size: 20px;
+    font-weight: bold;
+    color: darkslategray;
+}
+form div article{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+form article p{
+    color: lightslategray;
+}
+form label{
+    font-weight: bold;
+    color: darkslategray;
+}
+form input, #favorit{
+    margin-top: 10px;
+    height: 30px;
+}
+form input[type="submit"]{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background: darkslategray;
+    border: 1px solid darkslategray;
+}
+.input-control.success input{
+    border-color: green;
+}
+.input-control.error input{
+    border-color: red;
+}
+.input-control .error{
+    font-size: 9px;
+    height: 13px;
+}
+/*Package Section*/
+.package{
+    display: flex;
+    justify-content: center;
+    color: darkslategray;
+    width: 100vw;
+}
+.destination{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    padding: 15px 5px;
+}
+.location{
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid darkslategray;
+}
+.location img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background: lightgrey;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.location article{
+    margin-left: 10px;
+    width: 80%;
+}
+.location h3{
+    color: darkslategray;
+}
+.location p{
+    color: lightslategray;
+}
+/*Call Action Section*/
+.call{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    padding: 15px 30px;
+    background: lightgrey;
+}
+.call h1{
+    color: darkslategray;
+}
+.call p{
+    color: lightslategray;
+}
+.call button{
+    width: 80%;
+    height: 50px;
+    color: wheat;
+    font-weight: bold;
+    background: darkslategray;
+    border: none;
+    margin-top: 30px;
+}
+/*Responsive Section*/
+@media (max-width: 750px){
+    nav button{
+        font-size: 10px;
+    }
+    .content{
+        flex-direction: column;
+        margin: 15px 10px;
+    }
+    .content-1{
+        margin: 15px 0;
+    }
+    form{
+        margin: 15px 0;
+    }
+    .destination{
+        flex-direction: column;
+    }
+    .location{
+        width: 100%;
+    }
+    .call{
+        height: 400px;
+    }
+}
